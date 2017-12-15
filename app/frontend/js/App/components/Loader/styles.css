@@ -1,0 +1,31 @@
+.bottom-menu {
+  position: fixed;
+  bottom: 0;
+  height: 35px;
+  background: #fff;
+  width: 100%;
+  padding: 10px 0 10px 0;
+  font-size: 12px;
+  text-align: center;
+  color: #b0b0b0;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-space-around {
+  justify-content: space-around;
+}
+
+.flex-vertical-center {
+  align-items: center;
+}
+
+.active{
+  color: #ff5a57;
+}
+
+.icon{
+  font-size: 18px;
+}

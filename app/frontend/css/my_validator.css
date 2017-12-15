@@ -1,0 +1,21 @@
+.my-validator-message{
+  font-size: 12px;
+}
+
+.has-error .form-control{
+  border-color: #FF561D!important;
+}
+
+.my-validator-message.my-validator-message--error{
+  color: #FF561D!important;
+}
+.my-validator-message.my-validator-message--success{
+  color: #3c763d!important;
+}
+.my-validator-message.my-validator-message--warning{
+  color: #8a6d3b!important;
+}
+
+.has-error textarea {
+  border-color: #FF561D!important;
+}

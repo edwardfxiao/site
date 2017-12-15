@@ -1,0 +1,87 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no")
+    meta(name="author" content=(author || "Edward Xiao"))
+    meta(name="keywords" content=(keywords || "Edward, Xiao, Xiaomeng, Edward Xiao, web, design, designer, development, developer, programmer, front-end, frontend, creative, react, node, koa, 肖肖梦, website, webpage, 网站开发, 前端, 设计, js, javascript, html, css"))
+    meta(name="description" content=(description || "Edward Xiao"))
+    title
+      = title || 'Edward Xiao'
+    //- link(rel='stylesheet' href=helpers.assetUrl('base.css'))
+    block dynamicCss
+    link(href=helpers.assetUrl('site/favicon.png') rel="shortcut icon" type="image/png")
+    meta(name="csrf-param" content="_csrf")
+    meta(name="csrf-token" content=csrf)
+    script.
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-92161473-1', 'auto');
+      ga('send', 'pageview');
+    script.
+      var _vds = _vds || [];
+      window._vds = _vds;
+      (function(){
+        _vds.push(['setAccountId', '807cb55972f74103']);
+        (function() {
+          var vds = document.createElement('script');
+          vds.type='text/javascript';
+          vds.async = true;
+          vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(vds, s);
+        })();
+      })();
+  body
+    div(style="display:none")
+      h1
+        | 肖肖梦
+      h1
+        | Edward, Xiao, Xiaomeng, Edward Xiao
+      h1
+        | web, design, designer, developer, programmer, front-end, frontend, creative, react, redux, react-router, node, koa, website, webpage
+      h1
+        | webpack, webpack3, node js, javascript, html, css
+      h1
+        | 网站开发, 前端, 设计
+      div(style="width:300px;height:300px;overflow:hidden")
+        a(href="https://edwardxiao.com", alt="Edward Xiao 肖肖梦", rel="nofollow")
+          img(src='assets/img/edwardxiao.jpg', alt="Edward Xiao 肖肖梦", style="width:100%;height:auto")
+    block content
+    <!--[if lte IE 8]>
+    script.
+      document.body.innerHTML = '<div style="position:absolute;height:100%;bottom:0;top:0;left:0;right:0;text-align:center;">' +
+                                '<div style="display:table;width:100%;height:100%;">' +
+                                '<div style="display:table-cell;vertical-align:middle;">' +
+                                '<div style="margin-bottom:20px;">抱歉，您的浏览器实在太旧啦！请升级至IE9以上，或使用Chrome，Safari，360等现代浏览器访问。</div>' +
+                                '<div style="margin-bottom:30px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sorry, your browser is out of date, please update your browser to at least IE9 or use Chrome, Safari instead.</div>' +
+                                '</div>' +
+                                '</div>'
+                                '</div>';
+    <![endif]-->
+    <!--[if gt IE 8]>
+    script.
+      window.__PRELOADED_STATE__ = !{ JSON.stringify(preloadedState) }
+    script(src=helpers.assetUrl('vendor/js/plupload.full.min.js'))
+    //- script(src='https://cdn.staticfile.org/qiniu-js-sdk/1.0.14-beta/qiniu.min.js')
+    //- script(src='https://cdn.staticfile.org/tinymce/4.5.1/tinymce.min.js')
+    script(src=helpers.assetUrl('vendors.js'))
+    script(src=helpers.assetUrl('common.js'))
+    //- script(src=helpers.assetUrl('base.js'))
+    block dynamicJsIe
+    <![endif]-->
+    <!--[if !IE]>-->
+    script.
+      window.__PRELOADED_STATE__ = !{ JSON.stringify(preloadedState) }
+    script(src=helpers.assetUrl('vendor/js/plupload.full.min.js'))
+    //- script(src='https://cdn.staticfile.org/qiniu-js-sdk/1.0.14-beta/qiniu.min.js')
+    //- script(src='https://cdn.staticfile.org/tinymce/4.5.1/tinymce.min.js')
+    script(src=helpers.assetUrl('vendors.js'))
+    script(src=helpers.assetUrl('common.js'))
+    //- script(src=helpers.assetUrl('base.js'))
+    block dynamicJs
+    <!--<![endif]-->

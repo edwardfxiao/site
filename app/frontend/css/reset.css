@@ -1,0 +1,63 @@
+html body a {
+  font-size: 14px;
+  color: #4a4a4a;
+  text-decoration: none;
+}
+
+html body a:hover {
+  color: #4a4a4a;
+  text-decoration: none;
+}
+
+html body a:focus {
+  color: #4a4a4a;
+  text-decoration: none;
+}
+
+html body input:focus {
+  outline: none !important;
+}
+
+*:active,
+*:focus {
+  outline: none !important;
+}
+
+* {
+  -webkit-overflow-scrolling: touch;
+  padding: 0;
+  margin: 0;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+input[type=text],
+select {
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0 !important;
+  background-color: white;
+  background-position: right center;
+  background-repeat: no-repeat;
+  padding-right: 1.5em;
+}
+
+select {
+  background: transparent !important;
+}
+
+/* Change the white to any color ;) */
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  background: #fff !important;
+  -webkit-box-shadow: 0 0 0px 1000px #fff inset !important;
+  transition: background-color 5000s ease-in-out 0s !important;
+}
